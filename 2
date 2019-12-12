@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+   int n, i, j, k;
+   float s, d;
+   cin >> n;
+   cout<<"k= ";
+   cin>>k;
+   int a[n];
+   float b[j];
+   s=0;
+   d=0;
+   for (i = 0; i < n; i++)
+   {
+      cin >> a[i];
+   }
+   for (i=0; i<n; i++)
+    {
+        if (i<=k && i!=0)
+        {
+           s=s+a[i]; 
+        }
+    }
+    d=s/k;
+    i=0;
+    for (j=0; j<n; j++)
+    {
+            if (i!=k)
+            {
+                b[j]=a[i];
+                i+=1;
+            } else 
+            {
+                b[j]=d;
+                i+=1;
+            }
+    }
+    for (j=0; j<n; j++)
+    {
+        cout<<b[j]<<" ";
+    }
+    
+    return 0;
+}
